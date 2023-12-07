@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Car Game</title>
+<style>
+*{
+    margin: 0px;
+}
+body{
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sand.jpg/800px-Sand.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+.road{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    background: black;
+    margin:0px auto;
+}
+.line{
+width: 5px;
+background: linear-gradient(black,white,black,white,black,white,black,white,black,white);
+height: 95%;
+position: absolute;
+left: 50%;
+animation:line linear infinite 0.8s;
+}
+.redcar{
+width:50px;
+height:80px;
+position:absolute;
+bottom:0px;
+left:50px;
+z-index:1;
+animation:cars linear infinite 4s;
+
+}
+.yellow{
+width:50px;
+height:100px;
+position:absolute;
+bottom:0px;
+left:180px;
+z-index:1;
+animation:cars linear infinite 3.5s;
+
+}
+.black{
+width:50px;
+height:80px;
+position:absolute;
+bottom:0px;
+right:30px;
+z-index:1;
+animation:cars linear infinite 2.5s;
+}
+@keyframes line{
+100%{margin-top:20%}
+}
+@keyframes cars{
+100%{transform:translatey(-800px);}
+}
+</style>
+</head>
+<body>
+<div class="road">
+<img src="https://png.pngtree.com/png-clipart/20210808/original/pngtree-red-car-icon-png-image_6621053.jpg" class="redcar">
+<img src="https://bluesky.cdn.imgeng.in/cogstock-images/at-5e608e89356c40cbbc79fca81a5e20b2.jpg" class="yellow">          
+<img src="https://archive.izmostock.com/img-get/I0000qRDOBbt2GGU/s/1000/2022-jeep-compass-s-plug-in-4wd-suv-rear-view.jpg" class="black">
+<div class="line">
+</div>
+</div>
+</body>
+</html>
